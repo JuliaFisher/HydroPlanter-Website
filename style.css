@@ -1,6 +1,27 @@
- * {
+ #body {
      position: relative;
+     color: rgb(29, 12, 0);
+     font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
+     text-align: center;
  }
- {
+ h1, h2 {
+     text-transform: uppercase;
+ }
+a {
+    font-size: 20;
+    text-decoration: none;
+    font-weight: bold;
+}
 
- }
+#logo {
+    height: 10%;
+    float: left;
+}
+.symbol {
+    height: 5%;
+    float: right;
+}
+.container {
+    display: flex;
+}
+/*Look up flexbox for how to use the columns function*/
