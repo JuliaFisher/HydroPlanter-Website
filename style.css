@@ -1,15 +1,36 @@
  #body {
      position: relative;
-     color: rgb(29, 12, 0);
-     font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
      text-align: center;
- }
- h1, h2 {
      text-transform: uppercase;
- }
+     display: block;
+     margin: 5%;
+}
+
+*, a, p, h1, h2, h3, h4 {
+    color: rgb(29, 12, 0);
+    font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
+}
+
+p {
+    text-transform: none;
+}
+#main-menu {
+    width: 100%;
+    max-height: 5%;
+
+}
+.main-item {
+    float: left;
+    text-decoration: underline;
+    list-style-type: none;
+    padding: 5%;
+ 
+}
+/*#first, #last {
+    padding: 
+}*/
 a {
     font-size: 20;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -23,5 +44,6 @@ a {
 }
 .container {
     display: flex;
+    justify-content: space-evenly;
 }
 /*Look up flexbox for how to use the columns function*/
