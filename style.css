@@ -1,16 +1,14 @@
  #body {
-     position: relative;
-     text-align: center;
      text-transform: uppercase;
-     display: block;
-     margin: 5%;
 }
 
 *, a, p, h1, h2, h3, h4 {
     color: rgb(29, 12, 0);
     font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
 }
-
+button {
+    height: 25px;
+}
 p {
     text-transform: none;
 }
@@ -43,7 +41,15 @@ a {
     float: right;
 }
 .container {
-    display: flex;
-    justify-content: space-evenly;
+
 }
-/*Look up flexbox for how to use the columns function*/
+/*Look up flexbox for how to use the columns function
+Used
+<div class="container">
+<div class="row">
+<div class="col">
+    1 of 2
+  </div>
+  <div class="col">
+    2 of 2
+  </div>*/
