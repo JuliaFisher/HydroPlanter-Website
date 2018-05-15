@@ -6,11 +6,15 @@
     color: rgb(29, 12, 0);
     font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
 }
-button {
-    height: 25px;
+h1, h2 {
+    text-align: center;
 }
-p {
+
+#p {
     text-transform: none;
+    font-size: 16;
+    font-weight: normal;
+
 }
 #main-menu {
     width: 100%;
@@ -24,9 +28,7 @@ p {
     padding: 5%;
  
 }
-/*#first, #last {
-    padding: 
-}*/
+
 a {
     font-size: 20;
     font-weight: bold;
@@ -40,16 +42,20 @@ a {
     height: 5%;
     float: right;
 }
-.container {
 
+/*I can't make this work*/
+#top-image {
+    margin: none;
+    width: 100%;
 }
-/*Look up flexbox for how to use the columns function
-Used
-<div class="container">
-<div class="row">
-<div class="col">
-    1 of 2
-  </div>
-  <div class="col">
-    2 of 2
-  </div>*/
+
+.pic {
+    width: 100%;
+}
+.container:hover {
+    margin: 5px;
+    border: 1px solid rgb(29, 12, 0);
+}
+/*use parallax to make
+ background images scroll 
+ behind the text*/
