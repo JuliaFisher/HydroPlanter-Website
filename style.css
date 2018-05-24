@@ -65,6 +65,15 @@ a {
 .product {
     border: 1px solid rgb(29, 12, 0);
 }
+.card-text {
+    text-transform: none;
+}
+.items {
+    visibility: hidden;
+}
+.items:active {
+    visibility: visible;
+}
 /*use parallax to make
  background images scroll 
  behind the text*/
