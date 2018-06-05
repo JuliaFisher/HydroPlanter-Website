@@ -7,6 +7,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="./clickEvents.js" type="text/javascript"></script>
         <title>HydroPlanter</title>
     </head>
     <body id="body">
@@ -49,7 +50,7 @@
                     <div class="card-body">
                         <h5 class="card-title">HydroPlanters</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="hydroplanter.html" class="btn btn-info">See Options</a>
+                        <a onclick="toggle_visibility('hydroplanters');" class="btn btn-info">See Options</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Trellises</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="trellis.html" class="btn btn-info">See Options</a>
+                        <a onclick="toggle_visibility('trellises');" class="btn btn-info">See Options</a>
                     </div>
                 </div>
             </div>
@@ -69,11 +70,85 @@
                     <div class="card-body">
                         <h5 class="card-title">Extra Parts</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="trellis.html" class="btn btn-info">See Options</a>
+                        <a onclick="toggle_visibility('extraParts');" class="btn btn-info">See Options</a>
                     </div>
                 </div>
             </div>
-       </div>
+         
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="plant-whisperer-hero.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lights</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a onclick="toggle_visibility('lights');" class="btn btn-info">See Options</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="plant-whisperer-hero.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Greenhouse</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a  onclick="toggle_visibility('greehouse');" class="btn btn-info">See Options</a>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        <div class="row">
+            <div id="hydroplanters" style="display:none;" class="col">
+                <div class="card">
+                    <p>this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test </p>                    
+                    <div id="hydroplanters" style="display:none;" >This is foo</div>
+                </div>
+            </div>
+            <div id="trellises" style="display:none;" class="col">
+                <div class="card">
+                    <p>this is details 1s is a test this is a test this is a test </p>
+                    <div id="trellises" style="display:none;" >This is foo</div>                   
+                </div>
+            </div>
+            <div id="extraParts" style="display:none;" class="col">
+                <div class="card">
+                    <p>this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test </p>                    
+                    <div id="extraParts" style="display:none;" >This is foo</div>
+                </div>
+            </div>
+            <div id="lights" style="display:none;" class="col">
+                <div class="card">
+                    <p>this is details 1s is a test this is a test this is a test </p>        
+                    <div id="lights" style="display:none;" >This is foo</div>    
+                </div>
+            </div>
+            <div id="greenhouse" style="display:none;" class="col">
+                <div class="card">
+                    <p>this is details 1s is a test this is a test this is a test </p>
+                    <div id="greenhouse" style="display:none;" >This is foo</div>                    
+                </div>
+            </div>
+        </div>
+
+        
+            <p onclick="foo();">
+            <a href="#" onclick="toggle_visibility('foo');">Click here</a>
+            
+                <div id="foo" style="display:none;" >This is foo</div>
+            </p>
+       <!-- <div class="row" class="items">
+           <div class="col">
+               <div class="card">
+                    <img class="card-img-top" src="plant-whisperer-hero.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Extra Parts</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="extra-parts.html" class="btn btn-info">See Options</a>
+                    </div>
+               </div>
+           </div>
+       </div> -->
 
             <!--For this page, a user should be able to click a product group, e.g. trellises, and the available products
             will appear below that card in columns filling 100% of the page width(excluding margins).

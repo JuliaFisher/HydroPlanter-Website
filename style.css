@@ -74,6 +74,9 @@ a {
 .items:active {
     visibility: visible;
 }
+.card {
+    min-width: 50%;
+}
 /*use parallax to make
  background images scroll 
  behind the text*/
