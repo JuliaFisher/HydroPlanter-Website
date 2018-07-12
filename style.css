@@ -1,22 +1,25 @@
  #body {
      text-transform: uppercase;
+     text-align: center;
 }
 
 *, a, p, h1, h2, h3, h4 {
     color: rgb(29, 12, 0);
     padding: 5px;
     font-family: 'Georgia', 'Lucida Grande', 'Cambria', 'Helvetica';
+
 }
 h1, h2 {
-    text-align: center;
     margin: 3px;
 }
 
-#p {
+#p1, #p2, #p3 {
     text-transform: none;
     font-size: 16;
     font-weight: normal;
-
+}
+#p1:hover, #p2:hover, #p3:hover {
+    text-decoration-color: #C06D42;
 }
 #main-menu {
     width: 100%;
@@ -28,7 +31,6 @@ h1, h2 {
     text-decoration: underline;
     list-style-type: none;
     padding: 5%;
- 
 }
 
 a {
@@ -60,7 +62,6 @@ a {
 }
 .product:hover {
     border: 2px solid rgb(29, 12, 0);
-
 }
 .product {
     border: 1px solid rgb(29, 12, 0);
@@ -76,6 +77,9 @@ a {
 }
 .card {
     min-width: 50%;
+}
+li {
+    list-style-type: none;
 }
 /*use parallax to make
  background images scroll 
